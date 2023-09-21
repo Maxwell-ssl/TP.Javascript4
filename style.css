@@ -1,0 +1,76 @@
+/* Estilo del body en modo claro */
+body {
+    margin: auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+}
+
+header {
+    padding: 20px;
+    background-color: rgb(223, 223, 223);
+}
+
+/* Barra de navegación */
+.container {
+    list-style-type: none;
+    padding: 0; /* Elimina el relleno predeterminado de la lista */
+    text-align: center; /* Centra el contenido del contenedor */
+}
+
+nav ul {
+    display: flex; /* Hace que los elementos de la lista sean flexibles */
+    justify-content: center; /* Centra horizontalmente los elementos dentro del contenedor flex */
+}
+
+nav ul li {
+    margin: 0 20px; /* Ajusta el espacio entre los elementos según desees */
+}
+
+/* Estilo de los enlaces en modo claro */
+nav ul li a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    font-family: 'Roboto', sans-serif; /* Aplica la fuente Roboto o la fuente que desees */
+    font-size: 16px; /* Ajusta el tamaño de fuente según tus preferencias */
+    color: black; /* Color del texto en modo claro */
+    transition: color 0.3s; /* Transición de color suave */
+}
+
+/* Cambia el color de los enlaces al pasar el mouse en modo claro */
+nav ul li a:hover {
+    color: rgb(30, 30, 35); /* Cambia el color al pasar el mouse */
+}
+
+/* Estilo del boton en modo claro */
+#BotonModo {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: rgb(30, 30, 35);
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode header {
+    background-color: rgb(12, 12, 12);
+}
+
+/* Estilo del body en modo oscuro */
+.dark-mode {
+    background-color: rgb(30, 30, 35);
+    color: white;
+}
+
+/* Estilo del boton en modo oscuro */
+.dark-mode #BotonModo {
+    background-color: white;
+    color: black;
+}
+
+/* Estilo de los enlaces en modo oscuro */
+.dark-mode nav ul li a {
+    color: white; /* Color del texto en modo oscuro */
+}
